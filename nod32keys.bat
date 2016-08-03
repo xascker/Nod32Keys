@@ -35,33 +35,10 @@ ping -n 2 -w 500 ya.ru >nul || (
 				pause
 				exit
 				)
-
-ping -n 2 -w 500 hhuu.net >nul
-if not errorlevel 1 (
-	echo download page
-	"%~dp0program\wget.exe" -c -t 0 http://hhuu.net/ -O temp.int
-		     )
-
-if errorlevel 1 (
-	echo hhuu.net does not requested
-	pause
-	exit
-		 )
-		 
-::====================================================
-
-(SetLocal EnableDelayedExpansion  
-for /f "usebackq delims=<" %%a in ("%~dp0\temp.int") do ( 
-	set "$a=%%a"
-	if not "!$a!"=="!$a:Username=!" echo !$a:p^>=!
-	set "$b=%%a"
-	if not "!$b!"=="!$b:Password=!" echo !$b! 
-						  	 )
- )>"keys.txt"
+			 
+keyParsing.py
 
 ::====================================================
-
-del %~dp0\temp.int /q
 
 cd C:\Program Files\ESET\ESET NOD32 Antivirus\ || (
 						   echo Nod32 not installing
@@ -76,7 +53,7 @@ egui.exe /Max
 	"%~dp0program\nircmd.exe" sendkey u up 
 	
 (SetLocal EnableDelayedExpansion  
-for /f "skip=25 usebackq tokens=* delims=:" %%a in ("%~dp0\keys.txt") do ( 
+for /f "usebackq tokens=* delims=:" %%a in ("%~dp0\keys.txt") do ( 
 	set "$o=%%a"
 	if not "!$o!"=="!$o:Username=!" echo !$o:~9! | clip
 
@@ -90,7 +67,7 @@ for /f "skip=25 usebackq tokens=* delims=:" %%a in ("%~dp0\keys.txt") do (
 	"%~dp0program\nircmd.exe" sendkey tab press
 
 (SetLocal EnableDelayedExpansion  
-for /f "skip=26 usebackq tokens=* delims=:" %%a in ("%~dp0\keys.txt") do ( 
+for /f "usebackq tokens=* delims=:" %%a in ("%~dp0\keys.txt") do ( 
 	set "$p=%%a"
 	if not "!$p!"=="!$p:Password=!" echo !$p:~9! | clip
 				 					  )

@@ -14,7 +14,7 @@ f = open('keys.txt', 'w')
 
 username = parser.cssselect('table.table1 td.new_table_tb_top ')[:1]
 password = parser.cssselect('table.table1 td.new_table_tb_top ')[1:][:1]
-template = 'username: {}' + '\n' + 'password: {}'
+template = 'Username:{}' + '\n' + 'Password:{}'
 for i in zip(username, password):
     f.write(template.format(*[j.text for j in i]).strip())
 
