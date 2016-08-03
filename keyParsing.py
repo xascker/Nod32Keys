@@ -16,6 +16,7 @@ username = parser.cssselect('table.table1 td.new_table_tb_top ')[:1]
 password = parser.cssselect('table.table1 td.new_table_tb_top ')[1:][:1]
 template = 'Username:{}' + '\n' + 'Password:{}'
 for i in zip(username, password):
+	#print(template.format(*[j.text for j in i]).strip())
     f.write(template.format(*[j.text for j in i]).strip())
 
 f.close()
