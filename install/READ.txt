@@ -11,3 +11,4 @@ win7
 #>pip install requests
 	or
 #>pip install C:\Nod32Keys\install\requests-2.2.1-py2.py3-none-any.whl
+=================
