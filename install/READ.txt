@@ -1,14 +1,23 @@
-mint
-http://lxml.de/installation.html
-sudo pip install cssselect
-==================
-win7
-#>cd C:\Python27\Scripts
-#>pip install C:\Nod32Keys\install\cssselect-0.9.2-py2.py3-none-any.whl
-#>pip install C:\Nod32Keys\install\lxml-3.6.1-cp27-cp27m-win_amd64.whl
-	or
-#>pip install C:\Nod32Keys\install\lxml-3.6.1-cp27-cp27m-win32.whl
-#>pip install requests
-	or
-#>pip install C:\Nod32Keys\install\requests-2.2.1-py2.py3-none-any.whl
-==================
+########################################################################
+		win7_64
+1.Install python-2.7.12.amd64.msi
+2.Install python modules by cmd shell:
+
+cd C:\Python27\Scripts
+pip install C:\Nod32Keys\install\cssselect-0.9.2-py2.py3-none-any.whl
+pip install C:\Nod32Keys\install\lxml-3.6.1-cp27-cp27m-win_amd64.whl
+pip install C:\Nod32Keys\install\requests-2.2.1-py2.py3-none-any.whl
+		or
+Run install_modules_x64.bat
+#######################################################################
+		win7_32
+1.Install python-2.7.12rc186.msi
+2.Install python modules by cmd shell:
+
+cd C:\Python27\Scripts
+pip install C:\Nod32Keys\install\cssselect-0.9.2-py2.py3-none-any.whl
+pip install C:\Nod32Keys\install\lxml-3.6.1-cp27-cp27m-win32.whl
+pip install C:\Nod32Keys\install\requests-2.2.1-py2.py3-none-any.whl
+		or
+Run install_modules_x86.bat
+#######################################################################
