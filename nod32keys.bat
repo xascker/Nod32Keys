@@ -36,7 +36,7 @@ ping -n 2 -w 500 ya.ru >nul || (
 				exit
 				)
 			 
-keyParsing_trialeset_v1.2.py
+keyParsing_trialeset_v1.3.py
 
 ::====================================================
 
