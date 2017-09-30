@@ -30,7 +30,7 @@ echo	     ____""______________^"___
 echo.
 :=====================================================
 
-ping -n 2 -w 500 ya.ru >nul || (
+ping -n 2 -w 500 google.com >nul || (
 				echo does not internet
 				pause
 				exit
