@@ -1,5 +1,5 @@
 ########################################################################
-		win7_64
+		win7_64 win10_64
 1.Install python-2.7.12.amd64.msi
 2.Install python modules by cmd shell:
 
