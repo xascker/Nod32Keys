@@ -36,7 +36,7 @@ ping -n 2 -w 500 google.com >nul || (
 				exit
 				)
 				
-keyParsing_trialeset_v1.3.py
+KP_eset_key.py
 
 ::====================================================
 
