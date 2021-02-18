@@ -36,7 +36,7 @@ ping -n 2 -w 500 google.com >nul || (
 				exit
 				)
 				
-KP_sokol.py
+KP_fornod.py
 
 ::====================================================
 
